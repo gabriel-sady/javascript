@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(118, 90, 231);
+            color: white;
+            font: normal 1em arial;
+        }
+    </style>
 </head>
 <body>
     <h1>Estudos com DOM</h1>
-    p
+    <p>Resultados</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="lnk">Clique Aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerText)
+        var d = window.document.getElementById('lnk')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+    </script>
 </body>
 </html>
