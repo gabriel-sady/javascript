@@ -10,14 +10,16 @@ function verificar(){
     var sex = window.document.getElementsByName('radsex')
     var genero = ''
 
-    if (anonasc < 1800 || anonasc > anoat) {
-        window.alert(`Campo Ano de Nascimento está inválido. Só é aceito valores entre 1800 e ${anoat}`)
+    if (anonasc < 1900 || anonasc > anoat) {
+        window.alert(`Campo Ano de Nascimento está inválido. Só é aceito valores entre 1900 e ${anoat}`)
     }
 
     if(sex[0].checked) {
         genero = 'Homem'
+        res.innerHTML = `És um ${genero} com ${idd} anos.`
     } else if( sex[1].checked){
         genero = 'Mulher'
+        res.innerHTML = `És uma ${genero} com ${idd} anos.`
     } else {
         window.alert('Selecione um Sexo.')
     }
