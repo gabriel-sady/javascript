@@ -19,3 +19,9 @@ do {
 for(var d = 1; d <= 5; d++){
     console.log(`${d}`)
 }
+
+
+let s = 'você'
+
+console.log(s.toUpperCase())
+
