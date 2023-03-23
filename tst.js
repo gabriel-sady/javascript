@@ -6,3 +6,5 @@ while(c > 0){
     c --
 }
 console.log(s)
+
+
